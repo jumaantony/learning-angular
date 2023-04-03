@@ -6,5 +6,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ServerComponent {
+    serverId: number = 10;
+    serverStatus: string = 'offline';
 
+    // methods in typescript
+    getServerStatus() {
+        return this.serverStatus;
+    }
+    
 }
