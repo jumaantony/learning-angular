@@ -4,6 +4,8 @@
     </em>
 </p>
 
-<input type="button" value="Add New Server" class="btn btn-primary btn-md" [disabled]="!allowNewServer">
+<input type="button" value="Add New Server" class="btn btn-primary btn-md" [disabled]="!allowNewServer" (click)="onCreateServer()">
 
-<p [innerText]="allowNewServer"></p>
+<!-- <p [innerText]="allowNewServer"></p> -->
+
+<p>{{ serverCreationStatus }}</p>
