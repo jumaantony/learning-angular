@@ -23,3 +23,8 @@
 <ng-template #noServer>
     <p> No server was created </p>
 </ng-template>
+
+<!-- using ngfor to loop through an array -->
+<ul>
+    <li *ngFor="let server of servers;">{{server}}</li>
+</ul>
